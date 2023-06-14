@@ -8,7 +8,7 @@ $(document).ready(function () {
         let inputValue = parseInt(input.value, 10);
         if (inputValue > 0) {
             let card = document.createElement("div");
-            card.classList.add("menu-container", "card", "bg-secondary", "bg-opacity-25", "m-2");
+            card.classList.add("menu-container", "card", "bg-opacity-25", "m-2");
             card.setAttribute("id", `block-${blockNum}`);
             card.innerHTML = `<ul id="ul-block-${blockNum}" class="menu block-${blockNum}"></ul>`;
             document.body.appendChild(card)
@@ -48,9 +48,4 @@ $(document).ready(function () {
             input.value = "";
         }
     });
-
-
-
-
-
 });

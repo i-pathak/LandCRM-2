@@ -16,6 +16,7 @@ body {
   align-items: flex-start;
   width: fit-content;
   height: fit-content;
+  background-color: #fbeaeb !important;
 }
 
 .menu,
@@ -35,11 +36,12 @@ body {
   vertical-align: middle;
   width: 100px;
   min-height: 15vh;
-  border: 3px solid darkblue;
   margin: 5px;
   padding: 0;
   list-style-type: none;
-  background-color: #eee;
+  background-color: #2f3c7e;
+  color: #fbeaeb;
+  border-radius: 8px;
   -webkit-box-shadow: 3px 3px 10px 0px rgba(51, 51, 51, 0.5);
   -moz-box-shadow: 3px 3px 10px 0px rgba(51, 51, 51, 0.5);
   box-shadow: 3px 3px 10px 0px rgba(51, 51, 51, 0.5);

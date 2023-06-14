@@ -23,19 +23,30 @@
   </head>
   <body>
     <div class="row m-4 justify-content-center">
+      <select
+        id="select-project"
+        class="col-auto form-control-sm mx-2"
+        placeholder="Select Project"
+      >
+        <option value="" disabled selected>Select Project</option>
+        <option value="project-1">Project-1</option>
+        <option value="project-2">Project-2</option>
+      </select>
+
       <input
         id="initial-number"
         placeholder="Enter number of plots"
-        class="col-3 form-control-sm"
+        class="col-auto form-control-sm mx-2"
         type="number"
       />
       <button
         id="submit-btn"
-        class="col-1 btn btn-outline-primary"
+        class="col-auto btn btn-outline-danger btn-sm mx-2"
         type="submit"
       >
         Submit
       </button>
     </div>
+    <hr />
   </body>
 </html>
