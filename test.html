@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.6.6/dragula.min.js"></script>
+    <title>Two Blocks Example</title>
+    <style>
+      .block {
+        width: 200px;
+        height: 200px;
+        background-color: gray;
+        margin-bottom: 20px;
+      }
+
+      .block1 {
+        background-color: red;
+      }
+
+      .block2 {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="red" class="block block1">
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </ul>
+    </div>
+    <div id="blue" class="block block2">
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </ul>
+    </div>
+    <div id="yellow" class="block block1">
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </ul>
+    </div>
+  </body>
+
+  <script>
+    dragula([
+      document.querySelector("#red"),
+      document.querySelector("#blue"),
+      document.querySelector("#yellow"),
+    ]);
+  </script>
+</html>
